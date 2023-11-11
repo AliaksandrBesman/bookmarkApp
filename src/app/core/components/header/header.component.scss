@@ -1,0 +1,60 @@
+@import "src/app/styles/icons.scss";
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left-side {
+    display: flex;
+  }
+
+  .link-name {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .users {
+    display: flex;
+    align-items: center;
+    gap: -5px;
+    margin-left: 24px;
+
+    img {
+      height: 46px;
+      width: 46px;
+      object-fit: contain;
+      border-radius: 50%;
+      border: 2px solid var(--theme-bg-color);
+
+      &:not(:first-of-type) {
+        margin-left: - 5px;
+      }
+    }
+
+    .add-user {
+      @include icon(26px, 26px);
+      margin-left: 15px;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+
+  .right-side {
+    .add-card {
+      @include icon(20px, 20px);
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: tomato;
+      cursor: pointer;
+      transition: .2s;
+
+      &:hover {
+        background-color: lighten(tomato, 10);
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <img *ngFor="let tile of tiles; let index = index;"
+       [ngClass]="{
+        'active': tile.active,
+        'inactive': !tile.active && !isNotActiveImage(),
+        'collapsed': isNotActiveImage()
+       }"
+       [@fadeInOut]="tile.state"
+       [src]="tile.src"
+       alt="tile"
+       class="tile"
+       (click)="setActiveIndex(index)"
+  >
+</div>

@@ -1,0 +1,16 @@
+<app-avatar></app-avatar>
+
+<div class="separator"></div>
+
+<div class="menu">
+  <nav>
+    <ul>
+      <li *ngFor="let link of sidebarLinks"
+          [ngClass]="{'active': link.isActive}"
+          (click)="openLink(link)"
+      >
+        {{link.linkName}}
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,16 @@
+.wrapper img {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  transform: scaleX(-1);
+}
+.wrapper .personal-information {
+  margin-top: 10px;
+}
+.wrapper .personal-information .email {
+  color: var(--theme-inactive-color);
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/*# sourceMappingURL=avatar.component.css.map */
